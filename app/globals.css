@@ -17,3 +17,11 @@ body {
         text-wrap: balance;
     }
 }
+
+.ko-font {
+    font-family: var(--font-han-yong-un);
+}
+
+.en-font {
+    font-family: var(--font-canela);
+}
