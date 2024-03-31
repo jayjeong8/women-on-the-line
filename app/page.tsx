@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <main>
             <BgArtworks />
-            <section className="h-screen">
+            <section>
                 <MainTypographies />
             </section>
         </main>

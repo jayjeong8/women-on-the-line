@@ -1,6 +1,6 @@
 export default function MainTypographies() {
     return (
-        <section className="flex flex-col items-center justify-center h-full">
+        <section className="flex flex-col items-center justify-center h-screen">
             <div className="flex-1 flex flex-col items-center justify-center ko-font">
                 <h1 className="text-9xl scale-125 tracking-tighter mb-20 blur-md hover:blur-none transition duration-700 ease-out">
                     <div>선 위의</div>
