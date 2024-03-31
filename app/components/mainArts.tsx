@@ -41,9 +41,13 @@ const artsInfo = [
 
 export default function MainArts() {
     return (
-        <section className="grid grid-cols-5 h-screen py-28">
+        <section className="grid grid-cols-10 h-screen py-32">
+            <h2 className="z-10 px-6 py-3 ko-font text-5xl tracking-tighter">
+                <div>선 위의</div>
+                <div>여성들</div>
+            </h2>
             {artsInfo.map(({ src, title, description }) => (
-                <div key={title} className="col-span-1 group hover:col-span-3 hover:flex hover:items-start px-4">
+                <div key={title} className="col-span-2 group hover:col-span-5 hover:flex hover:items-start px-4">
                     <ArtworkImage className="w-full aspect-2/3 group-hover:w-1/2" src={src} />
                     <div className="py-2 group-hover:px-6 group-hover:w-1/2">
                         <h2 className="en-font text-2xl font-bold tracking-tighter mb-6 ml-2">{title}</h2>
