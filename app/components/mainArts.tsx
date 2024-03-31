@@ -39,33 +39,19 @@ const artsInfo = [
     },
 ];
 
-function Art({
-    className,
-    src,
-    title,
-    description,
-}: {
-    className: string;
-    src: string;
-    title: string;
-    description: string;
-}) {
-    return (
-        <div className={className}>
-            <ArtworkImage className="w-full aspect-2/3" src={src} />
-            <div>
-                <h2 className="en-font text-2xl font-bold tracking-tighter mt-6 ml-2">{title}</h2>
-                <p className="ko-font text-gray-500 text-lg tracking-tighter mt-8 ml-2 truncate">{description}</p>
-            </div>
-        </div>
-    );
-}
-
 export default function MainArts() {
     return (
-        <section className="grid grid-cols-5 gap-14 h-screen pt-32">
+        <section className="grid grid-cols-5 h-screen py-28">
             {artsInfo.map(({ src, title, description }) => (
-                <Art key={src} className="" src={src} title={title} description={description} />
+                <div key={title} className="col-span-1 group hover:col-span-3 hover:flex hover:items-start px-4">
+                    <ArtworkImage className="w-full aspect-2/3 group-hover:w-1/2" src={src} />
+                    <div className="py-2 group-hover:px-6 group-hover:w-1/2">
+                        <h2 className="en-font text-2xl font-bold tracking-tighter mb-6 ml-2">{title}</h2>
+                        <p className="ko-font text-gray-500 text-lg tracking-tighter ml-2 truncate group-hover:whitespace-pre-wrap">
+                            {description}
+                        </p>
+                    </div>
+                </div>
             ))}
         </section>
     );
