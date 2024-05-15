@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="dimmed bg-black/30 w-full h-full absolute" />
                 <section className="flex w-1/2 h-2/3 absolute inset-0 m-auto p-2 gap-2 bg-white rounded shadow-lg">
                     <div className="w-auto h-full aspect-2/3 rounded border-2 border-gray-400">
-                        <canvas />
+                        <canvas width="400" height="800" className="w-full h-full" />
                     </div>
                     <div className="w-full h-full">
                         <textarea
