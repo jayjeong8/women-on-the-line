@@ -17,7 +17,13 @@ export default function Home() {
                         <canvas />
                     </div>
                     <div className="w-full h-full">
-                        <textarea className="w-full h-1/2 p-2 rounded border-2 border-gray-400" />
+                        <textarea
+                            placeholder="당신의 이야기를 들려주세요."
+                            rows={7}
+                            required
+                            wrap="hard"
+                            className="w-full p-2 rounded border-2 border-gray-400 ko-font"
+                        />
                     </div>
                 </section>
             </section>
